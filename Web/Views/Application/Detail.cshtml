@@ -1,0 +1,12 @@
+﻿<section class="mainAbout my-5">
+    <div class="container">
+        <table class="table">
+            <tr><th>이름 : @Model.UserName</th></tr>
+            <tr> <th>연락처 : @Model.UserPhone</th></tr>
+            <tr><th>지원분야 : @Model.UserCareer</th></tr>
+            <tr> <th>주소 : @Model.Useraddress</th></tr>
+            <tr><th>CV : <img src="~/upload/@Model.UserCV" /></th></tr>
+            <tr><th>지원날짜 : @Model.Regdate</th></tr>
+        </table>
+    </div>
+</section>

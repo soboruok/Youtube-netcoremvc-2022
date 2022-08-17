@@ -26,8 +26,15 @@ using Web.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\설명\netcore\Web\Web\Views\_ViewImports.cshtml"
+using Web.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3f112ce549dd11d7c4323ac469c5b2d3cc0d0092", @"/Views/Account/Login.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"74b0619e1a302f0598271da1847e697c39d57b88", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"23bd1af9b050cd499e109c2d2364a393bd7593cf", @"/Views/_ViewImports.cshtml")]
     public class Views_Account_Login : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -56,7 +63,7 @@ using Web.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<section class=\"mainAbout my-5\">\r\n    <div class=\"container\">\r\n        <div class=\"showcase-form card\">\r\n            <h2>로그인</h2>\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3f112ce549dd11d7c4323ac469c5b2d3cc0d00923269", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3f112ce549dd11d7c4323ac469c5b2d3cc0d00923420", async() => {
                 WriteLiteral(@"
                 <div class=""form-control"">
                     <input type=""email""

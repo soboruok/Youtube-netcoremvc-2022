@@ -1,0 +1,30 @@
+﻿<section class="mainAbout my-5">
+    <div class="container">
+        <table class="table">
+            <tr>
+                <th>이름</th>
+                <th>연락처</th>
+                <th>지원분야</th>
+                <th>주소</th>
+                <th>CV</th>
+                <th>지원날짜</th>
+                <th>옵션</th>
+            </tr>
+            //UserName UserPhone UserCareer Useraddress UserCV Regdate
+            @foreach(var m in Model) {
+            <tr>
+                <td>@m.UserName</td>
+                <td>@m.UserPhone</td>
+                <td>@m.UserCareer</td>
+                <td>@m.Useraddress</td>
+                <td>@m.UserCV</td>
+                <td>@m.Regdate</td>
+                <td>
+                <a asp-controller="Application" asp-action="Detail" asp-route-Id="@m.UserId">상세보기</a>
+                    <a asp-controller="Application" asp-action="Edit" asp-route-Id="@m.UserId">수정하기</a>
+                </td>
+            </tr>
+            }
+        </table>
+    </div>
+</section>

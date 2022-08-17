@@ -1,0 +1,44 @@
+﻿@model ApplicationUserEditModel
+@using Microsoft.AspNetCore.Http;
+
+<section class="mainAbout my-5">
+    <div class="container">
+        <div class="showcase-form card">
+            <h2>지원서작성하기</h2>
+            <form method="POST" enctype="multipart/form-data" asp-controller="Application" asp-action="Edit">
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="ExistingCV" />
+                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                <div class="form-control">
+                    <input type="text" placeholder="이름을 작성해주세요" asp-for="UserName" />
+                    <span asp-validation-for="UserName"></span>
+                </div>
+                <div class="form-control">
+                    <input type="text" placeholder="연락처를 작성해주세요" asp-for="UserPhone" />
+                    <span asp-validation-for="UserPhone"></span>
+                </div>
+                <div class="form-control">
+                    <select placeholder="UserCourse" asp-for="UserCareer">
+                        <option value="">지원분야를 선택해주세요</option>
+                        <option value="BackEnd">BackEnd</option>
+                        <option value="FrontEnd">FrontEnd</option>
+                    </select>
+                    <span asp-validation-for="UserCareer"></span>
+                </div>
+                <div class="form-control">
+                    <input type="text" placeholder="주소를 적어주세요" asp-for="Useraddress" />
+                    <span asp-validation-for="Useraddress"></span>
+                </div>
+
+                
+                <div class="form-control">
+                    <input type="file" placeholder="CV를 업로드해주세요" asp-for="UserCV" />
+                    <span asp-validation-for="UserCV"></span>
+                   
+                </div>
+
+                <input type="submit" value="지원하기" class="btn btn-primary" />
+            </form>
+        </div>
+    </div>
+</section>
